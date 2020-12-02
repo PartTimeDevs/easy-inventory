@@ -8,6 +8,14 @@ repos:
     rev: 19.3b0
     hooks:
     -   id: black
+- repo: local
+  hooks:
+    - id: pylint
+      name: pylint
+      entry: pylint
+      language: system
+      types: [python]
+      exclude: "[a-zA-Z]*/(migrations|tests)/(.)*"
 - repo: https://github.com/asottile/seed-isort-config
   rev: v2.2.0
   hooks:
