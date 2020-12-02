@@ -13,6 +13,7 @@ pre-commit = "^2.9.2"
 pylint = "^2.6.0"
 isort = "^5.6.4"
 seed-isort-config = "^2.2.0"
+python-dotenv = "^0.15.0"
 
 [tool.poetry.dev-dependencies]
 
