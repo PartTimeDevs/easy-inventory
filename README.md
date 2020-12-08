@@ -29,9 +29,10 @@ A django webapp for easy inventory management
 ## RUN OPTIONS
 
 1. [Run with pyenv](#run-with-pyenv)
-1. [Run with docker-compose](#run-with-docker-compose)
+2. [Run with docker-compose (development)](#run-with-docker-compose-development)
+3. [Run with docker-compose (production)](#run-with-docker-compose-production)
 
-## Run with pyenv (development)
+## Run with pyenv
 
 >*We will use a python version manager called pyenv*
 
