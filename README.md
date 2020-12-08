@@ -80,30 +80,6 @@ A django webapp for easy inventory management
     4. Install project dependencies
         ```$ poetry install```
 
-<!-- - ### Step 1 - Setup virtualenvwrapper ([docs](https://virtualenvwrapper.readthedocs.io/en/latest/))
-
-    1. Use pip to install **virtualenvwrapper**
-        ```$ pip install virtualenvwrapper```
-    2. Store virtual sites path in enviroment variable
-        ```$ export WORKON_HOME=~/Sites```
-    3. Create virtual sites folder
-        ```$ mkdir -p $WORKON_HOME```
-    4. Run sh
-        ```$ source /usr/local/bin/virtualenvwrapper.sh```
-
-    ***Now you are able to create virtual enviroments*** -->
-
-<!-- - ### Step 2 - Setup project
-
-    1. Create virtual enviroment for our project
-        ```$ mkvirtualenv easy-inventory```
-    2. Activate it
-        ```$ workon easy-inventory```
-    3. Install dependencies manager
-        ```$ pip install poetry```
-    4. Install project dependencies
-        ```$ poetry install``` -->
-
 - ### Step 3 - Setup database
 
     >*We will use PostgreSQL as DB*
