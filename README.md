@@ -118,15 +118,14 @@ A django webapp for easy inventory management
 
 - ### Step 4 - Run project
 
-    >*If is the first time you run postgresql container, you need execute migrate as below:
-    ```$ python manage.py migrate```*
+    >*If is the first time you run postgresql container, you need execute ```$ python manage.py migrate``` first*
 
     ```$ python manage.py runserver```
 
 ## Run with docker-compose (development)
 
-> ```$ docker-compose up --build```
+```$ docker-compose up --build```
 
 ## Run with docker-compose (production)
 
-> ```$ docker-compose -f docker-compose-deploy.yml up --build```
+```$ docker-compose -f docker-compose-deploy.yml up --build```
