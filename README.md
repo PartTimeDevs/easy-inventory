@@ -46,8 +46,8 @@ A django webapp for easy inventory management
         $ curl https://pyenv.run | bash
         ```
 
-    3. Add the following to ~/.bashrc file and save it:
-
+    3. Edit your ~/.bashrc configuration file, add these lines at the end of it:
+        > You can use ```$ sudo nano ~/.bashrc to edit```
         ```sh
         export PATH="$HOME/.pyenv/bin:$PATH"
         eval "$(pyenv init -)"
@@ -72,13 +72,28 @@ A django webapp for easy inventory management
 
     > *Inside the project folder*
     1. Create virtual enviroment for our project
-        ```$ pyenv virtualenv 3.8.5 easy-inventory```
+
+        ```sh
+        $ pyenv virtualenv 3.8.5 easy-inventory
+        ```
+
     2. Activate it
-        ```$ pyenv local easy-inventory```
+
+        ```sh
+        $ pyenv local easy-inventory
+        ```
+
     3. Install dependencies manager
-        ```$ pip install poetry```
+
+        ```sh
+        $ pip install poetry
+        ```
+
     4. Install project dependencies
-        ```$ poetry install```
+
+        ```sh
+        $ poetry install
+        ```
 
 - ### Step 3 - Setup database
 
@@ -100,8 +115,12 @@ A django webapp for easy inventory management
 
 ## Run with docker-compose (development)
 
-```$ docker-compose up --build```
+```sh
+$ docker-compose up --build
+```
 
 ## Run with docker-compose (production)
 
-```$ docker-compose -f docker-compose-deploy.yml up --build```
+```sh
+$ docker-compose -f docker-compose-deploy.yml up --build
+```
