@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}<title>Products</title>{% endblock %}
+</head>
+
+<body>
+    {% block content %}
+    <h2>Products</h2>
+    <ul>
+        {% for product in products %}
+        <li>{{ product.name}}</li>
+        {% endfor %}
+    </ul>
+    {% load static %}
+    <img src="{% static 'easy.jpeg' %}" alt="My image">
+    {% endblock %}
+
+</body>
+
+</html>

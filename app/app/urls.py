@@ -15,5 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from inventory import views as inventory_views
 
-urlpatterns = [path("admin/", admin.site.urls)]
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("products/list", inventory_views.ProductList.as_view()),
+    path("products/", inventory_views.get_products),
+]
