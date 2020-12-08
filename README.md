@@ -4,7 +4,7 @@ A django webapp for easy inventory management
 
 ## Requirements
 
-- Install pyenv (Python version manager)
+- Python (3.8+ preferred)
 - Create .env (Inside the project folder)
     >*In order to keep your secrets safe you will need to create an .env file as below (with your own secrets):*
 
@@ -26,9 +26,14 @@ A django webapp for easy inventory management
     POSTGRES_PASSWORD=supersecretpassword
     ```
 
+## RUN OPTIONS
+
+1. [Run with pyenv](#run-with-pyenv)
+1. [Run with docker-compose](#run-with-docker-compose)
+
 ## Run with pyenv (development)
 
->*We will use virtual enviroments in order to install our project free of dependencies problems*
+>*We will use a python version manager called pyenv*
 
 - ### Step 1 - Setup pyenv ([full guide](https://realpython.com/intro-to-pyenv/))
 
