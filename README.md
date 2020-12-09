@@ -54,6 +54,7 @@ A django webapp for easy inventory management
 
     3. Edit your ~/.bashrc configuration file, add these lines at the end of it:
         > You can use ```$ sudo nano ~/.bashrc to edit```
+
         ```sh
         export PATH="$HOME/.pyenv/bin:$PATH"
         eval "$(pyenv init -)"
@@ -112,6 +113,18 @@ A django webapp for easy inventory management
     ```
 
     >*Note: Replace "supersecretpassword" password and "app" db name with yours configured in .env file*
+
+    #### Manage DB data:
+
+    - Export data:
+        ```sh
+        $ python manage.py dumpdata > dumped_data.json
+        ```
+
+    - Import data:
+        ```sh
+        $ python manage.py loaddata dumped_data.json
+        ```
 
 - ### Step 4 - Run project
 

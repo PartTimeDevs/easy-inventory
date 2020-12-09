@@ -21,4 +21,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("products/list", inventory_views.ProductList.as_view()),
     path("products/", inventory_views.get_products),
+    path("backup/export", inventory_views.dump_data),
 ]
