@@ -118,26 +118,26 @@ A django webapp for easy inventory management
 
     - Export data:
         ```sh
-        $ python manage.py dumpdata > dumped_data.json
+        $ python app/manage.py dumpdata > dumped_data.json
         ```
 
     - Import data:
         ```sh
-        $ python manage.py loaddata dumped_data.json
+        $ python app/manage.py loaddata dumped_data.json
         ```
 
 - ### Step 4 - Run project
 
-    >*If is the first time you run postgresql container, you need execute ```$ python manage.py migrate``` first*
+    >*If is the first time you run postgresql container, you need execute ```$ python app/manage.py migrate``` first*
 
     ```sh
-    $ python manage.py runserver
+    $ python app/manage.py runserver
     ```
 
     ~ Create a superuser:
 
     ```sh
-    $ python manage.py createsuperuser
+    $ python app/manage.py createsuperuser
     ```
 ## Run with docker-compose (development)
 
@@ -147,7 +147,7 @@ A django webapp for easy inventory management
     ```
 - Then you can create a superuser
     ```sh
-    $ docker-compose run app sh -c "python manage.py createsuperuser"
+    $ docker-compose run app sh -c "python app/manage.py createsuperuser"
     ```
 
 ## Run with docker-compose (production)
