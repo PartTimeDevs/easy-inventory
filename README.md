@@ -77,7 +77,7 @@ A django webapp for easy inventory management
 
 - ### Step 2 - Setup project
 
-    > *Inside the project folder*
+    > *Inside the cloned project folder*
     1. Create virtual enviroment for our project
 
         ```sh
@@ -130,13 +130,25 @@ A django webapp for easy inventory management
 
     >*If is the first time you run postgresql container, you need execute ```$ python manage.py migrate``` first*
 
-    ```$ python manage.py runserver```
+    ```sh
+    $ python manage.py runserver
+    ```
 
+    ~ Create a superuser:
+
+    ```sh
+    $ python manage.py createsuperuser
+    ```
 ## Run with docker-compose (development)
 
-```sh
-$ docker-compose up --build
-```
+- Run container
+    ```sh
+    $ docker-compose up --build
+    ```
+- Then you can create a superuser
+    ```sh
+    $ docker-compose run app sh -c "python manage.py createsuperuser"
+    ```
 
 ## Run with docker-compose (production)
 
