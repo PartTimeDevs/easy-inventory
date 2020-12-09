@@ -5,7 +5,7 @@ A django webapp for easy inventory management
 ## Requirements
 
 - Python (3.8+ preferred)
-- Create .env (Inside the project folder)
+- Create .env file (Inside the project folder)
     >*In order to keep your secrets safe you will need to create an .env file as below (with your own secrets):*
 
     Example .env file content:
@@ -53,7 +53,7 @@ A django webapp for easy inventory management
         ```
 
     3. Edit your ~/.bashrc configuration file, add these lines at the end of it:
-        > You can use ```$ sudo nano ~/.bashrc to edit```
+        > You can use ```$ sudo nano ~/.bashrc``` to open it
 
         ```sh
         export PATH="$HOME/.pyenv/bin:$PATH"
