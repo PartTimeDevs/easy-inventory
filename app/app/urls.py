@@ -19,7 +19,7 @@ from inventory import views as inventory_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("products/list", inventory_views.ProductList.as_view()),
-    path("products/", inventory_views.get_products),
-    path("backup/export", inventory_views.dump_data),
+    path("products/list", inventory_views.ProductList.as_view()),  # HTML
+    path("products/", inventory_views.get_products),  # HTTP RESPONSE
+    path("backup/export", inventory_views.dump_data),  # DOWNLOADABLE FILE
 ]
