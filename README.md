@@ -128,7 +128,7 @@ A django webapp for easy inventory management
 
 - ### Step 4 - Run project
 
-    >*If is the first time you run postgresql container, you need execute ```$ python app/manage.py migrate``` first*
+    **If is the first time you run postgresql container, you need execute ```$ python app/manage.py migrate``` first**
 
     ```sh
     $ python app/manage.py runserver
@@ -147,7 +147,7 @@ A django webapp for easy inventory management
     ```
 - Then you can create a superuser
     ```sh
-    $ docker-compose run app sh -c "python app/manage.py createsuperuser"
+    $ docker-compose run app sh -c "python manage.py createsuperuser"
     ```
 
 ## Run with docker-compose (production)
